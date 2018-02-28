@@ -53,9 +53,6 @@ func SetMode(value string) {
 	default:
 		panic("gin mode unknown: " + value)
 	}
-	if value == "" {
-		value = DebugMode
-	}
 	modeName = value
 }
 
